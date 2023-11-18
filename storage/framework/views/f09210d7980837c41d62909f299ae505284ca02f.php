@@ -1,0 +1,1 @@
+<?php /**PATH F:\laravel\daj-home\resources\views/partial/scripts.blade.php ENDPATH**/ ?>
