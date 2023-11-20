@@ -7,9 +7,9 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Str;
-use App\Menus;
-use App\AdminPrivilege;
-use App\AdminPrivilegeRole;
+use App\Models\Menus;
+use App\Models\AdminPrivilege;
+use App\Models\AdminPrivilegeRole;
 
 class MenusController extends Controller
 {

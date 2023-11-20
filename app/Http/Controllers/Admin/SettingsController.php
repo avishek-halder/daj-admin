@@ -7,12 +7,12 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Str;
-use App\Settings;
-use App\EmailSetting;
-use App\Categorie;
-use App\HomepageSetting;
-use App\HomepageSettingCategory;
-use App\CommissionSetting;
+use App\Models\Settings;
+use App\Models\EmailSetting;
+use App\Models\Categorie;
+use App\Models\HomepageSetting;
+use App\Models\HomepageSettingCategory;
+use App\Models\CommissionSetting;
 
 class SettingsController extends Controller
 {

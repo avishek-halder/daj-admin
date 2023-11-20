@@ -1,1 +1,0 @@
-<?php /**PATH F:\laravel\daj-home\resources\views/partial/footer.blade.php ENDPATH**/ ?>

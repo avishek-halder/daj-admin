@@ -7,8 +7,9 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Str;
-use App\User;
-use App\CmsPages;
+use App\Models\User;
+use App\Models\CmsPages;
+
 use \Cviebrock\EloquentSluggable\Services\SlugService;
 
 class ManageCMSController extends Controller

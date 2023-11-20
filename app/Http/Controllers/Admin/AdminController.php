@@ -8,7 +8,8 @@ use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Str;
-use App\AdminUser;
+
+use App\Models\AdminUser;
 
 class AdminController extends Controller
 {

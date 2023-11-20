@@ -7,9 +7,9 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Str;
-use App\User;
-use App\CmsPages;
-use App\CmsEmailTemplate;
+use App\Models\User;
+use App\Models\CmsPages;
+use App\Models\CmsEmailTemplate;
 
 class ManageEmailTemplates extends Controller
 {

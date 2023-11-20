@@ -7,8 +7,8 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Str;
-use App\AdminUser;
-use App\AdminPrivilege;
+use App\Models\AdminUser;
+use App\Models\AdminPrivilege;
 
 class AdminUsersController extends Controller
 {

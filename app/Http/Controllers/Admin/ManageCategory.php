@@ -6,8 +6,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Routing\Controller;
-use App\Category;
-use App\AdminUser;
+use App\Models\Category;
+use App\Models\AdminUser;
 
 class ManageCategory extends Controller
 {

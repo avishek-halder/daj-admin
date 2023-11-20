@@ -11,7 +11,7 @@ use Schema;
 use Session;
 use Storage;
 use Validator;
-use App\AdminUser;
+use App\Models\AdminUser;
 
 class AdminHelper
 {

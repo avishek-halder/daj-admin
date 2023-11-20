@@ -16,7 +16,7 @@ $adminurl = config('app.admin_path');
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('clear-cache', function () {
+Route::get('cache-clear', function () {
     Artisan::call("cache:clear");
     Artisan::call("view:clear");
     Artisan::call("route:clear");

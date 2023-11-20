@@ -10,6 +10,8 @@ use Illuminate\Routing\Controller;
 use Illuminate\Support\Str;
 use App\Settings;
 
+use Illuminate\Support\Facades\Mail;
+
 class HomeController extends Controller
 {
     //Running home page
@@ -20,7 +22,12 @@ class HomeController extends Controller
         $data['meta_description'] = 'Home';
         $data['meta_keywords'] = 'Home';
 
-        return view('frontend.home')->with($data);
+        Mail::raw('Hi, welcome user!', function ($message) {
+            $message->to("admin@freesmtpservers.com")
+              ->subject("Yest");
+          });
+
+        // return view('frontend.home')->with($data);
     }
     
 }

@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Hash;
-use App\User;
+use App\Models\User;
 
 class ManageClientsController extends Controller
 {

@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Str;
-use App\State;
+use App\Models\State;
 
 
 
@@ -56,9 +56,7 @@ class ManageState extends Controller
         $data = [];
         $data['page_title'] = 'Add State';
         $data['country'] = DB::table('countries')->whereIn('id',[38,231])->get();
-       
-            
-        return view('admin.state.add', $data);
+       return view('admin.state.add', $data);
     }
 
     function getStateByCountry(Request $request)
