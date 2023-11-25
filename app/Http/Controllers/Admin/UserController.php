@@ -23,15 +23,19 @@ class UserController extends Controller
         $data['page_title'] = 'Manage User';
         $data['limit'] = $limit = (!empty($request->get('limit')) ? $request->get('limit') : 20);
         $q = $request->get('q');
-        $data["rows"] = User::when($q,function($query) use ($q)
-        {
+        $filter_clumn = $request->get('filter_column');
+        $sorting = $request->get('sorting');
+        $data["rows"] = User::when($q,function($query) use ($q){
             $query->where("users.fname","like","%".$q."%");
             $query->orWhere("users.lname","like","%".$q."%");
             $query->orWhere("users.phone_number","like","%".$q."%");
 
-        })->paginate($data["limit"]);
-        $filter_clumn = $request->get('filter_column');
-        $sorting = $request->get('sorting');
+        })
+        ->when($filter_clumn, function($q) use ($filter_clumn,$sorting) {
+            return $q->orderBy($filter_clumn,$sorting);
+        })
+        ->paginate($data["limit"]);
+
         return view('admin.users.index', $data);
     }
 }

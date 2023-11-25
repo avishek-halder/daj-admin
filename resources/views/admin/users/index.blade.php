@@ -66,9 +66,9 @@
                     <thead class="table-blue">
                         <tr class="active">
                             <th width="3%"><input type="checkbox" id="checkall"></th>
-                            <th><a href="{{ route('users.index') }}?filter_column=name&sorting={{(request()->get('filter_column')=='name' && request()->get('sorting')=='asc')?'desc':'asc'}}" title="Click to sort ascending">Name &nbsp; <i class="fa fa-sort"></i></a></th>
+                            <th><a href="{{ route('users.index') }}?filter_column=uname&sorting={{(request()->get('filter_column')=='uname' && request()->get('sorting')=='asc')?'desc':'asc'}}" title="Click to sort ascending">Name &nbsp; <i class="fa fa-sort"></i></a></th>
                             <th><a href="{{ route('users.index') }}?filter_column=email&sorting={{(request()->get('filter_column')=='email' && request()->get('sorting')=='asc')?'desc':'asc'}}" title="Click to sort ascending">Email &nbsp; <i class="fa fa-sort"></i></a></th>
-                            <th><a href="{{ route('users.index') }}?filter_column=id_admin_privileges&sorting={{(request()->get('filter_column')=='id_admin_privileges' && request()->get('sorting')=='asc')?'desc':'asc'}}" title="Click to sort ascending">Phone No &nbsp; <i class="fa fa-sort"></i></a></th>
+                            <th><a href="{{ route('users.index') }}?filter_column=phone_number&sorting={{(request()->get('filter_column')=='phone_number' && request()->get('sorting')=='asc')?'desc':'asc'}}" title="Click to sort ascending">Phone No &nbsp; <i class="fa fa-sort"></i></a></th>
                             <th><a href="{{ route('users.index') }}?filter_column=status&sorting={{(request()->get('filter_column')=='status' && request()->get('sorting')=='asc')?'desc':'asc'}}" title="Click to sort ascending">Status &nbsp; <i class="fa fa-sort"></i></a></th>
                             <th width="auto" style="text-align:right">Action</th>
                         </tr>
