@@ -6,7 +6,7 @@
 /storage
 .env
 composer.lock
-/bootstrap
+
 #.env.backup
 #.phpunit.result.cache
 #Homestead.json
